@@ -1,0 +1,151 @@
+Terms of Service (ToS)
+Effective Date: 2026
+Owner: Umar
+Contact: umar.yousufi@gmail.com
+
+========================================
+1. ACCEPTANCE OF TERMS
+========================================
+
+By inviting, using, or interacting with EVERYTHING BOT (“the Bot”), you agree to
+these Terms of Service. If you do not agree, you must remove the Bot from your
+server and discontinue all use.
+
+These Terms apply to all users, server owners, administrators, moderators, and
+any individuals interacting with the Bot.
+
+========================================
+2. DESCRIPTION OF SERVICE
+========================================
+
+The Bot is a Discord-based service operated and hosted exclusively by the owner.
+Users may invite the official hosted instance of the Bot to their Discord servers
+and interact with its commands and features.
+
+Users do NOT receive any rights to the underlying software, source code, or
+intellectual property.
+
+========================================
+3. USER RESPONSIBILITIES
+========================================
+
+Users agree to:
+
+3.1 Follow Discord’s Terms of Service and Community Guidelines.
+
+3.2 Use the Bot only for lawful purposes.
+
+3.3 Not attempt to exploit, abuse, or misuse the Bot, including:
+    - Spamming commands
+    - Attempting to crash or overload the Bot
+    - Attempting to bypass restrictions or permissions
+    - Using the Bot for harassment or malicious activity
+
+3.4 Not impersonate the owner or claim ownership of the Bot.
+
+========================================
+4. PROHIBITED ACTIONS
+========================================
+
+Users may NOT:
+
+4.1 Host, run, copy, modify, or redistribute the Bot or its code.
+
+4.2 Attempt to reverse-engineer, decompile, or extract any part of the Bot.
+
+4.3 Use the Bot to collect unauthorized data from users or servers.
+
+4.4 Use the Bot in a way that violates Discord policies or applicable laws.
+
+========================================
+5. DATA COLLECTION & PRIVACY
+========================================
+
+5.1 The Bot may temporarily store limited data required for functionality,
+such as:
+    - User IDs
+    - Server IDs
+    - Command usage
+    - Configuration settings
+    - Logs for moderation features
+    - Temporary caches to improve performance
+    - Analytics data (e.g., usage statistics)
+    - Leveling or economy data (if applicable)
+
+5.2 The Bot does NOT store:
+    - Message content (unless explicitly stated by a feature)
+    - Personal information
+    - Sensitive data
+
+5.3 Data is never sold, shared, or transferred to third parties.
+
+5.4 Users may request deletion of stored data by contacting:
+    Umar.yousufi@gmail.com
+
+========================================
+6. BOT AVAILABILITY & DOWNTIME
+========================================
+
+6.1 The Bot is provided as-is and may experience downtime, bugs, or outages.
+
+6.2 The owner is not obligated to provide uptime guarantees, support, or
+maintenance.
+
+6.3 Features may be added, removed, or changed at any time without notice.
+
+========================================
+7. MODERATION & ENFORCEMENT
+========================================
+
+7.1 The owner reserves the right to:
+    - Restrict access to the Bot
+    - Block users or servers
+    - Disable features
+    - Remove the Bot from any server
+
+7.2 Actions may be taken without prior notice.
+
+========================================
+8. LIABILITY
+========================================
+
+The owner is not responsible for:
+
+8.1 Damages caused by the Bot’s actions or malfunctions.
+
+8.2 Loss of data, server issues, or moderation outcomes.
+
+8.3 Misuse of the Bot by users or server administrators.
+
+========================================
+9. INTELLECTUAL PROPERTY
+========================================
+
+The Bot and all associated software are protected under a strict proprietary
+license. Users receive no rights to the software itself.
+
+To request permission to use, modify, or access the software, contact:
+umar.yousufi@gmail.com
+
+========================================
+10. TERMINATION OF SERVICE
+========================================
+
+The owner may terminate access to the Bot at any time, for any reason, without
+notice.
+
+Users may remove the Bot from their server at any time.
+
+========================================
+11. CHANGES TO TERMS
+========================================
+
+These Terms may be updated at any time. Continued use of the Bot constitutes
+acceptance of the updated Terms.
+
+========================================
+12. CONTACT
+========================================
+
+For questions, data requests, or permission inquiries:
+Email: umar.yousufi@gmail.com

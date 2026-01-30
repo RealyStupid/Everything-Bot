@@ -1,3 +1,5 @@
+# This module manages the SQLite database for storing registered guild IDs.
+# It provides functions to initialize the database, register/unregister guilds, and retrieve the list of registered guilds.
 import aiosqlite
 
 DB_PATH = "Data/bot_database.db"
@@ -41,4 +43,5 @@ async def unregister_guild(guild_id: int):
         return cursor.rowcount > 0
 
 async def get_registered_guilds():
-    return GUILD_IDS
+    for guild_id in GUILD_IDS:
+        return guild_id

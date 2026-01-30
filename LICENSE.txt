@@ -34,6 +34,9 @@ The following actions are STRICTLY PROHIBITED without explicit written Permissio
 
 3.1 Using the Software for any purpose, including personal, educational,
 commercial, non-commercial, or experimental use.
+This restriction does not apply to end-users who invite the official hosted instance
+of the Software (the Discord bot) to their Discord server. Such usage is permitted
+as part of the service provided by the copyright holder.
 
 3.2 Copying, modifying, altering, translating, refactoring, or creating
 derivative works based on the Software.
