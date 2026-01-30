@@ -1,4 +1,4 @@
-Copyright (c) 2026 Umar
+Copyright (c) 2026 Umar Yousufi
 All Rights Reserved.
 
 ========================================
@@ -78,7 +78,7 @@ entity named in the Permission document.
 ========================================
 
 5.1 All Permission requests must be submitted to the following email:
-    **umaryt123@gmail.com**
+    umar.yousufi@gmail.com
 
 5.2 Requests must include:
     - Full legal name of the requester
@@ -136,7 +136,7 @@ including direct, indirect, incidental, special, exemplary, or consequential dam
 arising from the Use or inability to Use the Software.
 
 ========================================
-10. PERMISSION LOG (OPTIONAL)
+10. PERMISSION LOG
 ========================================
 
 Authorized Users:
