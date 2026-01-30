@@ -9,6 +9,7 @@ class SyncCog(commands.Cog):
     @commands.command(name='sync', help='Syncs the application commands with Discord.')
     @commands.is_owner()
     async def sync(self, ctx):
+        await ctx.send("Syncing commands...")
         total = 0
 
         for guild_id in GUILD_IDS:

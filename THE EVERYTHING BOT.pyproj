@@ -11,6 +11,8 @@
     <OutputPath>.</OutputPath>
     <Name>THE EVERYTHING BOT</Name>
     <RootNamespace>THE EVERYTHING BOT</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,8 +23,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Cogs\syncManager.py" />
+    <Compile Include="Cogs\Manager\guildManager.py" />
+    <Compile Include="Cogs\Manager\syncManager.py" />
     <Compile Include="bot.py" />
+    <Compile Include="Cogs\test.py" />
     <Compile Include="Utilities\botConfig.py" />
     <Compile Include="Utilities\databaseManager.py" />
   </ItemGroup>
@@ -31,6 +35,9 @@
     <Folder Include="Cogs\Manager\" />
     <Folder Include="Data\" />
     <Folder Include="Utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

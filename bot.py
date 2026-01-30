@@ -3,7 +3,7 @@ from discord.ext import commands
 
 import os
 import Utilities.botConfig as botConfig
-from Utilities.databaseManager import init_db
+from Utilities.databaseManager import init_db, GUILD_IDS
 
 class MyClient(commands.Bot):
     def __init__(self):
@@ -37,9 +37,11 @@ class MyClient(commands.Bot):
                     print(f"Loaded cog: {module}")
 
     async def on_ready(self):
-        print('------------------------------------------------------------------------')
-        print(f'Logged in as {self.user} (ID: {self.user.id})')
-        print('------------------------------------------------------------------------')
+        print(
+            '------------------------------------------------------------------------\n'
+            f'Logged in as {self.user} (ID: {self.user.id})\n'
+            '------------------------------------------------------------------------'
+        )
 
 bot = MyClient()
 

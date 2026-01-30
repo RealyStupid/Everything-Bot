@@ -1,8 +1,11 @@
 import discord
+import os
+from dotenv import load_dotenv #type: ignore
 
 intents = discord.Intents.default()
 intents.message_content = True
 
-BOT_TOKEN = "MTQ2NjA4OTA1NzEwMzkwNDgzOA.GQHpY6.x9eDoFvsmw6-l2WjpwL0Nun8YSE7sW6CwXtw0k"
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 APPLICATION_ID = 1466089057103904838
