@@ -1,27 +1,26 @@
 import discord
+from discord import guild
 from discord.ext import commands
 
+from Utilities.guildBinder import sync_guild
 from Utilities.databaseManager import GUILD_IDS
+
+
 class SyncCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name='sync', help='Syncs the application commands with Discord.')
+    @commands.command(name="sync")
     @commands.is_owner()
     async def sync(self, ctx):
-        await ctx.send("Syncing commands...")
+        await ctx.send("Syncing all guilds...")
+
         total = 0
-
         for guild_id in GUILD_IDS:
-            guild = discord.Object(id=guild_id)
-            try:
-                synced = await self.bot.tree.sync(guild=guild)
-                total += len(synced)
-                print(f"synced {synced} commands to {guild_id}")
-            except Exception as e:
-                await print(f"an error acured: {e}")
+            synced = await sync_guild(self.bot, guild_id)
+            total += len(synced)
 
-        await ctx.send(f"Synced commands to {len(GUILD_IDS)} guilds ({total} commands total).")
+        await ctx.send(f"Synced {total} commands across {len(GUILD_IDS)} guilds.")
 
 async def setup(bot):
     await bot.add_cog(SyncCog(bot))

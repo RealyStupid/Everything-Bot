@@ -6,7 +6,8 @@ import os
 
 # importing utilities for bot configuration and database management
 import Utilities.botConfig as botConfig
-from Utilities.databaseManager import init_db, GUILD_IDS
+from Utilities.databaseManager import init_db, GUILD_IDS, init_module_db
+from Cogs.Modules.Core.defaultModules import enable_defaults_for_existing_guilds
 
 # defining the main bot client class
 class MyClient(commands.Bot):
@@ -22,6 +23,9 @@ class MyClient(commands.Bot):
     async def setup_hook(self):
         # Initialize the database
         await init_db()
+        await init_module_db()
+        await enable_defaults_for_existing_guilds(self)
+
         # Load all cogs recursively
         await self.load_all_cogs("./Cogs")
 

@@ -23,22 +23,29 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Cogs\Modules\Core\defaultModules.py" />
     <Compile Include="Cogs\Manager\guildManager.py" />
+    <Compile Include="Cogs\Manager\moduleManager.py" />
     <Compile Include="Cogs\Manager\syncManager.py" />
     <Compile Include="bot.py" />
-    <Compile Include="Cogs\test.py" />
+    <Compile Include="Cogs\Modules\Core\test.py" />
     <Compile Include="Utilities\botConfig.py" />
     <Compile Include="Utilities\databaseManager.py" />
+    <Compile Include="Utilities\decorators.py" />
+    <Compile Include="Utilities\guildBinder.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Cogs\" />
     <Folder Include="Cogs\Manager\" />
+    <Folder Include="Cogs\Modules\" />
+    <Folder Include="Cogs\Modules\Core\" />
     <Folder Include="Data\" />
     <Folder Include="Utilities\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="LICENSE.txt" />
+    <Content Include="ToS.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
