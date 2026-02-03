@@ -1,5 +1,4 @@
 import discord
-from discord import guild
 from discord.ext import commands
 
 from Utilities.guildBinder import sync_guild
@@ -21,6 +20,7 @@ class SyncCog(commands.Cog):
             total += len(synced)
 
         await ctx.send(f"Synced {total} commands across {len(GUILD_IDS)} guilds.")
+
 
 async def setup(bot):
     await bot.add_cog(SyncCog(bot))
