@@ -127,7 +127,7 @@ The sync engine will:
 
 ---
 ## 🧩 Step 4 — Add Your Module to the Database
-In Utilities/databaseManager.py, add your module name to the list of available modules:
+In Cogs/Manager/ModuleManager.py, add your module name to the list of available modules:
 
 `AVAILABLE_MODULES = ["core", "moderation", "fun", "logging", "economy"]`
 

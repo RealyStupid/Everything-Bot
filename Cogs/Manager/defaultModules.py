@@ -5,7 +5,7 @@ from Utilities.databaseManager import set_module_enabled
 from Utilities.guildBinder import sync_guild
 
 
-DEFAULT_MODULES = ["core", "manager"]  # modules enabled for every new guild
+DEFAULT_MODULES = ["core"]
 
 async def enable_defaults_for_existing_guilds(bot):
     for guild in bot.guilds:
