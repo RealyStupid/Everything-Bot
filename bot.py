@@ -7,7 +7,7 @@ import os
 # importing utilities for bot configuration and database management
 import Utilities.botConfig as botConfig
 from Utilities.databaseManager import init_db, GUILD_IDS, init_module_db
-from Cogs.Modules.Core.defaultModules import enable_defaults_for_existing_guilds
+from Cogs.Manager.defaultModules import enable_defaults_for_existing_guilds
 
 # defining the main bot client class
 class MyClient(commands.Bot):

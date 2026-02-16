@@ -1,4 +1,4 @@
-import discord
+﻿import discord
 from discord.ext import commands
 from discord import app_commands
 
@@ -8,25 +8,22 @@ from Utilities.databaseManager import (
     get_enabled_modules_for_guild,
 )
 from Utilities.guildBinder import sync_guild
-from Utilities.customGroup import create_group  # <-- new
-
-AVAILABLE_MODULES = ["core", "moderation", "fun", "logging"]
+from Utilities.customGroup import create_group
+from Cogs.Manager.defaultModules import DEFAULT_MODULES
+from Utilities.moduleEnum import ModuleEnum
 
 
 class ModuleCog(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-        # Create a custom group that is NOT auto-registered.
-        # It only lives in our registry until the sync engine uses it.
+        # Create custom group (not auto-registered)
         self.module_group = create_group(
             name="module",
             description="Manage bot modules"
         )
 
-        # Attach subcommands to the group.
-        # These are real app_commands.Command objects, but again:
-        # we do NOT add them to bot.tree here.
+        # Add subcommands
         self.module_group.add_command(
             app_commands.Command(
                 name="list",
@@ -52,6 +49,35 @@ class ModuleCog(commands.Cog):
         )
 
     # -------------------------------------------------
+    # AUTOCOMPLETE HELPERS
+    # -------------------------------------------------
+
+    async def autocomplete_all_modules(
+        self,
+        interaction: discord.Interaction,
+        current: str
+    ):
+        """Autocomplete for /module enable"""
+        return [
+            app_commands.Choice(name=m.value, value=m.value)
+            for m in ModuleEnum
+            if current.lower() in m.value.lower()
+        ]
+
+    async def autocomplete_disable_modules(
+        self,
+        interaction: discord.Interaction,
+        current: str
+    ):
+        """Autocomplete for /module disable (excludes default modules)"""
+        return [
+            app_commands.Choice(name=m.value, value=m.value)
+            for m in ModuleEnum
+            if m.value not in DEFAULT_MODULES
+            and current.lower() in m.value.lower()
+        ]
+
+    # -------------------------------------------------
     # /module list
     # -------------------------------------------------
     @module("core")
@@ -60,8 +86,9 @@ class ModuleCog(commands.Cog):
         guild_id = interaction.guild_id
         enabled = await get_enabled_modules_for_guild(guild_id)
         text = ", ".join(enabled) if enabled else "No modules enabled."
+
         await interaction.response.send_message(
-            f"Enabled modules: {text}",
+            f"Enabled modules:```{text}```",
             ephemeral=True,
         )
 
@@ -71,10 +98,11 @@ class ModuleCog(commands.Cog):
     @module("core")
     @guilds_for()
     @app_commands.describe(name="The module to enable.")
+    @app_commands.autocomplete(name=autocomplete_all_modules)
     async def enable_module(self, interaction: discord.Interaction, name: str):
         guild_id = interaction.guild_id
 
-        if name not in AVAILABLE_MODULES:
+        if name not in ModuleEnum.list():
             await interaction.response.send_message(
                 f"Unknown module: `{name}`",
                 ephemeral=True,
@@ -82,11 +110,12 @@ class ModuleCog(commands.Cog):
             return
 
         await set_module_enabled(guild_id, name, True)
-        await sync_guild(self.bot, guild_id)
+
         await interaction.response.send_message(
             f"Enabled module `{name}` and synced commands.",
             ephemeral=True,
         )
+        await sync_guild(self.bot, guild_id)
 
     # -------------------------------------------------
     # /module disable
@@ -94,26 +123,32 @@ class ModuleCog(commands.Cog):
     @module("core")
     @guilds_for()
     @app_commands.describe(name="The module to disable.")
+    @app_commands.autocomplete(name=autocomplete_disable_modules)
     async def disable_module(self, interaction: discord.Interaction, name: str):
         guild_id = interaction.guild_id
 
-        if name not in AVAILABLE_MODULES:
+        if name not in ModuleEnum.list():
             await interaction.response.send_message(
                 f"Unknown module: `{name}`",
                 ephemeral=True,
             )
             return
 
+        if name in DEFAULT_MODULES:
+            await interaction.response.send_message(
+                f"❌ The `{name}` module is required and cannot be disabled.",
+                ephemeral=True,
+            )
+            return
+
         await set_module_enabled(guild_id, name, False)
-        await sync_guild(self.bot, guild_id)
+
         await interaction.response.send_message(
             f"Disabled module `{name}` and synced commands.",
             ephemeral=True,
         )
+        await sync_guild(self.bot, guild_id)
 
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(ModuleCog(bot))
-
-
-# MTQ2NjA4OTA1NzEwMzkwNDgzOA.Gonpsm.342LOV4OFLD7J_3z6cqRvnwdludln6kYivi6Z4

@@ -2,11 +2,11 @@
 from discord import app_commands
 from discord.ext import commands
 
-from Utilities.databaseManager import (
+from Utilities.databaseManager import ( # type: ignore
     GUILD_IDS,
     get_enabled_modules_for_guild,
 )
-from Utilities.customGroup import REGISTERED_GROUPS
+from Utilities.customGroup import REGISTERED_GROUPS # type: ignore
 
 
 async def rebuild_commands_for_guild(bot: commands.Bot, guild_id: int):
@@ -56,8 +56,8 @@ async def rebuild_commands_for_guild(bot: commands.Bot, guild_id: int):
     # 2) Handle custom groups from our registry
     # -------------------------------------------------
     for group in REGISTERED_GROUPS:
-        # We'll decide per subcommand whether this group should exist
-        # in this guild. If at least one subcommand is allowed, we add
+        # decides per subcommand whether this group should exist
+        # in this guild. If at least one subcommand is allowed, add
         # the group and its allowed subcommands.
         allowed_subcommands: list[app_commands.Command] = []
 

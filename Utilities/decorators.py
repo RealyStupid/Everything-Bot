@@ -17,3 +17,4 @@ def module(module_name: str):
         setattr(func, "__module_name__", module_name)
         return func
     return wrapper
+

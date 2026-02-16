@@ -3,9 +3,13 @@ from discord.ext import commands
 
 from Utilities.databaseManager import set_module_enabled
 from Utilities.guildBinder import sync_guild
+from Utilities.moduleEnum import ModuleEnum
 
+# Default modules that can NEVER be disabled
+DEFAULT_MODULES = [
+    ModuleEnum.CORE.value,
+]
 
-DEFAULT_MODULES = ["core"]
 
 async def enable_defaults_for_existing_guilds(bot):
     for guild in bot.guilds:
@@ -13,6 +17,7 @@ async def enable_defaults_for_existing_guilds(bot):
             await set_module_enabled(guild.id, module, True)
 
         await sync_guild(bot, guild.id)
+
 
 class GuildEvents(commands.Cog):
     def __init__(self, bot):
@@ -29,7 +34,7 @@ class GuildEvents(commands.Cog):
 
     @commands.Cog.listener()
     async def on_guild_remove(self, guild: discord.Guild):
-        # Optional: clean up DB entries
+        # Optional cleanup
         pass
 
 
