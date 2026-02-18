@@ -33,7 +33,7 @@ async def rebuild_commands_for_guild(bot: commands.Bot, guild_id: int):
     # 1) Handle "normal" commands (like /ping)
     # -------------------------------------------------
     for command in tree.walk_commands():
-        # Skip groups here; we only want leaf commands from this source.
+        # Skip groups here; only want leaf commands from this source.
         if isinstance(command, app_commands.Group):
             continue
 
@@ -81,8 +81,8 @@ async def rebuild_commands_for_guild(bot: commands.Bot, guild_id: int):
             # No subcommands of this group are allowed in this guild.
             continue
 
-        # We want the group itself to be present in this guild.
-        # When we add the group to the tree, its subcommands come along.
+        # the group itself to be present in this guild.
+        # the group to the tree, its subcommands come along.
         commands_for_guild.append(group)
 
     # -------------------------------------------------
