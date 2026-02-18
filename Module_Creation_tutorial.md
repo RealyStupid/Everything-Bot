@@ -65,9 +65,10 @@ async def setup(bot):
 ## ⚙️ Step 2 — Add Commands to Your Cog
 
 Commands are normal slash commands decorated with:
-- @module("<module_name>")
-- @guilds_for()
-
+```python
+@module("<module_name>")
+@guilds_for()
+```
 Example:
 ```python
 class FunCog(commands.Cog):

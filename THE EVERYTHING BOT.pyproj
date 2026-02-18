@@ -29,7 +29,6 @@
     <Compile Include="Cogs\Manager\syncManager.py" />
     <Compile Include="bot.py" />
     <Compile Include="Cogs\Modules\Core\Moderation\moderationCommands.py" />
-    <Compile Include="Cogs\Modules\Core\test.py" />
     <Compile Include="Utilities\botConfig.py" />
     <Compile Include="Utilities\customGroup.py" />
     <Compile Include="Utilities\databaseManager.py" />
