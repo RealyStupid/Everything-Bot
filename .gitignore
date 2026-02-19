@@ -1,18 +1,2 @@
-# Visual Studio cache
-.vs/
-*.user
-*.suo
-
-# Build output
-bin/
-obj/
-
-# Other temporary files
-*.cache
-*.log
-*.tmp
-*.db
-*.opendb
-
-# Auto-generated files
-Generated\ Files/
+.vs
+.env
