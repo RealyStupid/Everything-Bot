@@ -110,3 +110,11 @@ async def get_enabled_modules_for_guild(guild_id: int) -> list[str]:
         """, (guild_id,))
         rows = await cursor.fetchall()
         return [r[0] for r in rows]
+
+async def remove_all_modules_for_guild(guild_id: int):
+    async with aiosqlite.connect("database.db") as db:
+        await db.execute(
+            "DELETE FROM guild_modules WHERE guild_id = ?",
+            (guild_id,)
+        )
+        await db.commit()

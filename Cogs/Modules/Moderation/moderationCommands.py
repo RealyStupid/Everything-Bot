@@ -1,9 +1,4 @@
-import discord
-from discord import app_commands
-from discord.ext import commands
-
-from Utilities.customGroup import create_group
-from Utilities.decorators import guilds_for, module
+from Utilities.cogDecs import *
 
 class ModerationCommands(commands.Cog):
     def __init__(self, bot):

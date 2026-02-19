@@ -1,8 +1,8 @@
 import discord
 from discord.ext import commands
 
-from Utilities.databaseManager import set_module_enabled
-from Utilities.guildBinder import sync_guild
+from Utilities.databaseManager import set_module_enabled, remove_all_modules_for_guild
+from Utilities.guildBinder import sync_guild, unsync_guild
 from Utilities.moduleEnum import ModuleEnum
 
 # Default modules that can NEVER be disabled
@@ -34,8 +34,13 @@ class GuildEvents(commands.Cog):
 
     @commands.Cog.listener()
     async def on_guild_remove(self, guild: discord.Guild):
-        # Optional cleanup
-        pass
+        await remove_all_modules_for_guild(guild.id)
+
+        await unsync_guild(self.bot, guild.id)
+
+        print(f"Left guild: {guild.name} (ID: {guild.id})")
+
+
 
 
 async def setup(bot):

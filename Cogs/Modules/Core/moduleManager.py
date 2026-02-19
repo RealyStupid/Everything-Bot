@@ -9,7 +9,7 @@ from Utilities.databaseManager import (
 )
 from Utilities.guildBinder import sync_guild
 from Utilities.customGroup import create_group
-from Cogs.Manager.defaultModules import DEFAULT_MODULES
+from Cogs.Modules.Core.defaultModules import DEFAULT_MODULES
 from Utilities.moduleEnum import ModuleEnum
 
 

@@ -1,35 +1,34 @@
-# importing necessary libraries
+"""
+----------------------------------------------------------------------------
+This file is the main entry point for the bot. It initializes the bot, loads all cogs, and starts the bot.
+----------------------------------------------------------------------------
+"""
+
+
 import discord
 from discord.ext import commands
 
 import os
 
-# importing utilities for bot configuration and database management
 import Utilities.botConfig as botConfig
 from Utilities.databaseManager import init_db, GUILD_IDS, init_module_db
-from Cogs.Manager.defaultModules import enable_defaults_for_existing_guilds
+from Cogs.Modules.Core.defaultModules import enable_defaults_for_existing_guilds
 
-# defining the main bot client class
 class MyClient(commands.Bot):
     def __init__(self):
-        # initializing the bot with command prefix, intents, and application ID
         super().__init__(
             command_prefix="!",
             intents=botConfig.intents,
             application_id=botConfig.APPLICATION_ID
         )
 
-    # setting up the bot hook to initialize the database and load cogs
     async def setup_hook(self):
-        # Initialize the database
         await init_db()
         await init_module_db()
         await enable_defaults_for_existing_guilds(self)
 
-        # Load all cogs recursively
         await self.load_all_cogs("./Cogs")
 
-    # method to load all cogs from a specified directory
     async def load_all_cogs(self, directory):
         base = directory.replace("\\", "/")
 
@@ -38,16 +37,13 @@ class MyClient(commands.Bot):
                 if file.endswith(".py"):
                     full_path = os.path.join(root, file).replace("\\", "/")
 
-                    # Remove the base directory prefix
                     relative = full_path[len(base):].lstrip("/")
 
-                    # Convert to module path
                     module = f"Cogs.{relative[:-3].replace('/', '.')}"
 
                     await self.load_extension(module)
                     print(f"Loaded cog: {module}")
 
-    # event handler for when the bot is ready
     async def on_ready(self):
         print(
             '------------------------------------------------------------------------\n'
@@ -55,8 +51,6 @@ class MyClient(commands.Bot):
             '------------------------------------------------------------------------'
         )
 
-# creating an instance of the bot and running it
 bot = MyClient()
 
-# running the bot with the specified token
 bot.run(botConfig.BOT_TOKEN)

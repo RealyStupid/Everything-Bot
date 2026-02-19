@@ -116,3 +116,9 @@ async def sync_all_registered_guilds(bot: commands.Bot):
 
     print(f"[SYNC] Finished syncing all registered guilds. Total commands synced: {total}")
     return total
+
+async def unsync_guild(bot, guild_id: int):
+    guild = bot.get_guild(guild_id)
+    if guild:
+        # Clear all commands for this guild
+        await bot.tree.sync(guild=guild)

@@ -28,7 +28,7 @@
     <Compile Include="Cogs\Manager\moduleManager.py" />
     <Compile Include="Cogs\Manager\syncManager.py" />
     <Compile Include="bot.py" />
-    <Compile Include="Cogs\Modules\Core\Moderation\moderationCommands.py" />
+    <Compile Include="Cogs\Modules\Moderation\moderationCommands.py" />
     <Compile Include="Utilities\botConfig.py" />
     <Compile Include="Utilities\customGroup.py" />
     <Compile Include="Utilities\databaseManager.py" />
@@ -41,7 +41,7 @@
     <Folder Include="Cogs\Manager\" />
     <Folder Include="Cogs\Modules\" />
     <Folder Include="Cogs\Modules\Core\" />
-    <Folder Include="Cogs\Modules\Core\Moderation\" />
+    <Folder Include="Cogs\Modules\Moderation\" />
     <Folder Include="Data\" />
     <Folder Include="Utilities\" />
   </ItemGroup>
