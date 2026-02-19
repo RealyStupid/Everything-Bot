@@ -1,4 +1,4 @@
-from Utilities.cogDecs import *
+from Utilities.cogDeps import *
 
 class ModerationCommands(commands.Cog):
     def __init__(self, bot):
