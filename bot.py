@@ -1,6 +1,8 @@
 """
 ----------------------------------------------------------------------------
-This file is the main entry point for the bot. It initializes the bot, loads all cogs, and starts the bot.
+This file is the main entry point for the bot. It initializes the bot, initializes the DB files if needed, loads all cogs, and starts the bot.
+
+this script should be run to start the bot, and it will handle everything else. The cogs are located in the Cogs folder, and they will be loaded automatically when the bot starts. If you want to add a new cog, simply create a new .py file in the Cogs folder and it will be loaded automatically when the bot starts.
 ----------------------------------------------------------------------------
 """
 
