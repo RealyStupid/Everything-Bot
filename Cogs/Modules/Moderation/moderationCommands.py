@@ -27,6 +27,30 @@ class ModerationCommands(commands.Cog):
             )
         )
 
+        self.mod_group.add_command(
+            app_commands.Command(
+                name="ban",
+                description="Ban a member from the server.",
+                callback=self.banMember,
+            )
+        )
+
+        self.mod_group.add_command(
+            app_commands.Command(
+                name="unban",
+                description="Unban a member from the server.",
+                callback=self.unbanMember,
+            )
+        )
+
+        self.mod_group.add_command(
+            app_commands.Command(
+                name="warn",
+                description="warn a member from the server.",
+                callback=self.warnMember,
+            )
+        )
+
     @module("moderation")
     @guilds_for()
     async def sayMessage(self, interaction: discord.Interaction, message: str):
