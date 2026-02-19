@@ -1,162 +1,143 @@
-Copyright (c) 2026 Umar Yousufi
-All Rights Reserved.
+﻿PROPRIETARY SOFTWARE LICENSE AGREEMENT
+Version 2.0 — February 2026
+Copyright © 2026 Umar Yousufi. All Rights Reserved.
+This Proprietary Software License Agreement (“Agreement” or “License”) constitutes a legally binding contract between the copyright holder, Umar Yousufi (“Licensor”), and any individual or entity who accesses, downloads, installs, executes, interacts with, or otherwise makes any Use of the Software (“User”). By accessing or possessing the Software in any form, the User acknowledges and agrees to be bound by the terms of this Agreement.
+No rights are granted unless expressly provided herein in a signed written Permission document issued by the Licensor.
 
 ========================================
 1. DEFINITIONS
 ========================================
-
-1.1 "The Software" refers to all files, source code, modules, assets,
-documentation, configurations, databases, compiled binaries, scripts,
-and any other materials included in or associated with this project,
-whether in source or compiled form.
-
-1.2 "Authorized User" refers to any individual or entity who has received
-explicit written Permission from the copyright holder.
-
-1.3 "Permission" refers to a signed, written document issued by the
-copyright holder granting limited rights to an Authorized User.
-
-1.4 "Use" refers to running, executing, hosting, deploying, modifying,
-copying, or interacting with the Software in any form.
+1.1 “Software” means all files, source code, object code, modules, assets, documentation, configurations, databases, compiled binaries, scripts, APIs, architectural designs, logic flows, algorithms, data structures, metadata, and any other materials, whether tangible or intangible, included in or associated with this project, regardless of format or method of delivery.
+1.2 “Authorized User” means an individual or entity who has received explicit, written, and signed Permission from the Licensor.
+1.3 “Permission” means a formal, signed, written document issued solely by the Licensor granting limited, revocable rights to Use the Software under specific conditions.
+1.4 “Use” means to run, execute, host, deploy, install, compile, modify, copy, distribute, test, analyze, interact with, or otherwise engage with the Software in any manner, whether automated or manual.
+1.5 “Derivative Work” means any modification, adaptation, translation, transformation, improvement, extension, or work based upon or incorporating any portion of the Software, including conceptual, structural, or algorithmic derivatives.
+1.6 “Confidential Information” means all non‑public information contained within or derived from the Software, including but not limited to architecture, logic, algorithms, workflows, and internal design.
+1.7 “Technical Measures” means any security, access control, licensing, or usage restriction mechanism implemented by the Licensor.
+1.8 “Official Instance” means the Discord bot hosted and operated exclusively by the Licensor, which end‑users may invite to their servers without requiring Permission.
 
 ========================================
-2. OWNERSHIP
+2. OWNERSHIP AND INTELLECTUAL PROPERTY
 ========================================
-
-The Software is the exclusive property of the copyright holder.
-No rights are granted unless explicitly stated in a written Permission document.
+2.1 The Software is and shall remain the sole and exclusive property of the Licensor.
+2.2 This Agreement does not transfer, assign, or convey any ownership rights, intellectual property rights, or proprietary interests to the User.
+2.3 All rights not expressly granted in a signed Permission document are reserved by the Licensor.
+2.4 No implied license, estoppel, or presumption of permission shall arise from the Software’s availability, distribution, or public visibility.
 
 ========================================
-3. RESTRICTIONS
+3. RESTRICTIONS ON USE
 ========================================
-
 The following actions are STRICTLY PROHIBITED without explicit written Permission:
-
-3.1 Using the Software for any purpose, including personal, educational,
-commercial, non-commercial, or experimental use.
-This restriction does not apply to end-users who invite the official hosted instance
-of the Software (the Discord bot) to their Discord server. Such usage is permitted
-as part of the service provided by the copyright holder.
-
-3.2 Copying, modifying, altering, translating, refactoring, or creating
-derivative works based on the Software.
-
-3.3 Redistributing, sharing, uploading, or transmitting the Software in any form,
-including public or private repositories, cloud storage, or file-sharing platforms.
-
-3.4 Hosting, deploying, or running the Software on any server, device,
-virtual machine, container, or cloud environment.
-
-3.5 Selling, licensing, sublicensing, renting, leasing, or monetizing the Software.
-
-3.6 Reverse-engineering, decompiling, disassembling, or attempting to derive
-the source code, structure, algorithms, or internal logic of the Software.
-
-3.7 Using the Software or any portion of it to train, fine-tune, evaluate,
-or develop machine learning models, artificial intelligence systems,
-or automated tools.
-
-3.8 Removing or altering copyright notices, license terms, or attribution.
-
-3.9 Circumventing or attempting to circumvent any technical, legal, or
-usage restrictions imposed by this License.
+3.1 Any Use of the Software, including personal, educational, commercial, non‑commercial, research, or experimental use.
+Exception: End‑users may interact with the Official Instance of the Discord bot.
+3.2 Copying, modifying, altering, translating, refactoring, reverse‑engineering, decompiling, disassembling, or creating Derivative Works.
+3.3 Redistributing, sharing, uploading, publishing, or transmitting the Software in any form, including public or private repositories, cloud storage, or file‑sharing platforms.
+3.4 Hosting, deploying, running, or executing the Software on any server, device, virtual machine, container, or cloud environment.
+3.5 Selling, licensing, sublicensing, renting, leasing, or monetizing the Software or any Derivative Work.
+3.6 Using the Software to train, fine‑tune, evaluate, benchmark, or develop machine learning models, artificial intelligence systems, or automated tools.
+3.7 Removing, altering, obscuring, or circumventing copyright notices, license terms, attribution, or Technical Measures.
+3.8 Developing or distributing software that is substantially similar to, competes with, or replicates the functionality of the Software.
+3.9 Using automated tools, crawlers, scripts, or systems to analyze, extract, scrape, or interact with the Software.
+3.10 Forking, mirroring, or hosting the Software on any version‑control platform (including GitHub, GitLab, Bitbucket, or Gitea).
+3.11 Disclosing or publishing any Confidential Information derived from the Software.
 
 ========================================
 4. PERMISSION REQUIREMENTS
 ========================================
-
-4.1 Permission must be explicitly granted in writing and signed by the
-copyright holder.
-
-4.2 Permission is granted on a case-by-case basis and may include
-additional conditions or limitations.
-
-4.3 Permission is non-transferable and applies only to the individual or
-entity named in the Permission document.
-
-4.4 Permission may be revoked at any time for any reason.
+4.1 Permission must be explicitly granted in a signed written document issued by the Licensor.
+4.2 Permission is granted on a case‑by‑case basis and may include additional conditions, limitations, or obligations.
+4.3 Permission is non‑transferable and applies solely to the individual or entity named in the Permission document.
+4.4 Permission may be revoked at any time, with or without cause, at the sole discretion of the Licensor.
+4.5 Silence, non‑response, or lack of communication does not constitute Permission.
 
 ========================================
-5. HOW TO REQUEST PERMISSION
+5. PERMISSION REQUEST PROCEDURE
 ========================================
-
-5.1 All Permission requests must be submitted to the following email:
-    umar.yousufi@gmail.com
-
+5.1 All Permission requests must be submitted to:
+umar.yousufi@gmail.com
 5.2 Requests must include:
-    - Full legal name of the requester
-    - Intended use case
-    - Whether modification or hosting is required
-    - Duration of intended use
-    - Any third parties involved
-    - Any distribution or deployment plans
-
-5.3 Silence or non-response does NOT constitute Permission.
-
-5.4 Permission is not granted unless a signed written document is provided.
+- Full legal name of the requester
+- Intended use case
+- Whether modification or hosting is required
+- Duration of intended use
+- Any third parties involved
+- Any distribution or deployment plans
+5.3 Permission is not granted unless a signed written document is provided.
 
 ========================================
-6. VIOLATIONS & ENFORCEMENT
+6. VIOLATIONS AND ENFORCEMENT
 ========================================
-
-6.1 Any unauthorized Use of the Software constitutes a violation of this License.
-
-6.2 Violations may result in:
-    - Immediate termination of all rights
-    - DMCA takedown actions
-    - Legal claims for damages
-    - Recovery of attorney fees and court costs
-
-6.3 The copyright holder reserves the right to pursue
-civil, administrative, or criminal remedies as applicable.
+6.1 Any unauthorized Use constitutes a material breach of this Agreement.
+6.2 The Licensor may pursue any and all legal remedies, including:
+- Immediate termination of all rights
+- DMCA takedown actions
+- Injunctive relief
+- Monetary damages
+- Recovery of attorney fees and court costs
+6.3 The Licensor may pursue civil, administrative, or criminal remedies as applicable.
 
 ========================================
 7. TERMINATION
 ========================================
-
-7.1 Any violation of this License results in immediate and automatic
-termination of all granted rights.
-
-7.2 Upon termination, the user must immediately:
-    - Cease all Use of the Software
-    - Delete all copies in their possession
-    - Remove the Software from all devices, servers, and storage
+7.1 Any violation results in immediate and automatic termination of all rights.
+7.2 Upon termination, the User must immediately:
+- Cease all Use of the Software
+- Delete all copies in their possession
+- Remove the Software from all devices, servers, and storage
+7.3 Termination does not limit the Licensor’s right to seek damages or other remedies.
 
 ========================================
 8. NO WARRANTY
 ========================================
-
-The Software is provided "AS IS" without warranty of any kind, express or implied,
-including but not limited to warranties of merchantability, fitness for a
-particular purpose, or non-infringement.
+8.1 The Software is provided “AS IS”, without warranty of any kind, express or implied.
+8.2 The Licensor disclaims all warranties, including merchantability, fitness for a particular purpose, and non‑infringement.
 
 ========================================
 9. LIMITATION OF LIABILITY
 ========================================
-
-In no event shall the copyright holder be liable for any damages,
-including direct, indirect, incidental, special, exemplary, or consequential damages
-arising from the Use or inability to Use the Software.
+9.1 In no event shall the Licensor be liable for any damages, including direct, indirect, incidental, special, exemplary, punitive, or consequential damages arising from or relating to the Use or inability to Use the Software.
 
 ========================================
-10. PERMISSION LOG
+10. PATENTS
 ========================================
-
-Authorized Users:
-- None
-
-========================================
-11. JURISDICTION
-========================================
-
-This License shall be governed by and interpreted under the laws of the
-jurisdiction chosen by the copyright holder.
-
-Any disputes shall be resolved exclusively in the courts of that jurisdiction.
+10.1 No patent rights are granted under this License.
+10.2 The User is prohibited from filing, asserting, or pursuing any patent claims based on the Software or any Derivative Work.
 
 ========================================
-12. RIGHTS RESERVED
+11. CONFIDENTIALITY
 ========================================
+11.1 The Software constitutes Confidential Information.
+11.2 The User shall not disclose, publish, or make available any Confidential Information without explicit written Permission.
 
-All rights not expressly granted are reserved by the copyright holder.
-Unauthorized Use of the Software is strictly prohibited.
+========================================
+12. NO IMPLIED LICENSE
+========================================
+12.1 No rights shall arise by implication, estoppel, or otherwise.
+12.2 Public availability of the Software does not grant any rights.
+
+========================================
+13. SUPREMACY OF THIS AGREEMENT
+========================================
+13.1 In the event of any conflict between this License and the terms of any platform or service where the Software is hosted, this License shall prevail.
+
+========================================
+14. SEVERABILITY
+========================================
+14.1 If any provision is found invalid or unenforceable, the remaining provisions shall remain in full force and effect.
+
+========================================
+15. SURVIVAL
+========================================
+15.1 Sections relating to Ownership, Restrictions, Violations, Termination, No Warranty, Limitation of Liability, Jurisdiction, Confidentiality, and Rights Reserved shall survive termination.
+
+========================================
+16. JURISDICTION
+========================================
+16.1 This Agreement shall be governed by the laws of the jurisdiction chosen by the Licensor.
+16.2 All disputes shall be resolved exclusively in the courts of that jurisdiction.
+
+========================================
+17. RIGHTS RESERVED
+========================================
+17.1 All rights not expressly granted are reserved by the Licensor.
+17.2 Unauthorized Use of the Software is strictly prohibited.

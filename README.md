@@ -64,5 +64,6 @@ without Discord.py auto‑registering anything globally.
 ---
 
 # 📜 LICENSE
-This project is licensed under the Proprietary License.
-See the LICENSE.txt file for details.
+This project is licensed under the Proprietary License. See the `LICENSE.txt` file for details.
+
+`LICENSE.txt` also includes detailes about who to contact for contributing to the project, which is currently closed to external contributions.
