@@ -155,11 +155,3 @@ Users may NOT:
 ========================================
 For questions, data requests, or permission inquiries:
 Email: umar.yousufi@gmail.com
-
-⭐ 4. If you want, I can also create:
-- A Privacy Policy matching this ToS
-- A short, human‑readable summary
-- A GitHub‑friendly version
-- A Discord‑server announcement version
-- A combined ToS + Privacy Policy + License bundle
-Just tell me the style you want next.
