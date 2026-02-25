@@ -9,7 +9,6 @@ EVERYTHING BOT lets server owners enable or disable features on demand, keeping 
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![License](https://img.shields.io/badge/License-Proprietary-red)
-![Status](https://img.shields.io/badge/Status-Active-success)
 ![Modular](https://img.shields.io/badge/Architecture-Modular-orange)
 
 ---
